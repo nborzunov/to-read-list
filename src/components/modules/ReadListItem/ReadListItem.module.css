@@ -1,0 +1,51 @@
+.readListItem {
+    padding: 1rem;
+    font-size: 1.5rem;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    color: #414042;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.readListItem + .readListItem {
+    margin-top: 0.5rem;
+}
+
+.readListItem > * + * {
+    margin-top: 0.5rem;
+}
+
+.readListButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.readListButton {
+    padding: 1rem 0.5rem;
+    background: transparent;
+    border: none;
+    color: #5BC0BE;
+    transition: 0.2s;
+    font-size: 1.25rem;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.readListButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.markedAsRead {
+    background-color: #B8D4E3;
+}
+
+@media screen and (min-width: 1000px) {
+    .readListButton {
+        font-size: 1rem;
+    }
+}

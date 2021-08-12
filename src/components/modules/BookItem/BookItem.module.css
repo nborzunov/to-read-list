@@ -1,0 +1,37 @@
+.bookItem {
+    padding: 1rem;
+    font-size: 1.5rem;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
+    border-bottom: 1px solid transparent;
+    color: #414042;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.bookItem + .bookItem {
+    margin-top: 0.75rem;
+}
+
+.bookItem > * + * {
+    margin-top: 0.5rem;
+}
+
+.bookItemSelected {
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+    color: inherit;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.bookItem:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: inherit;
+}
+
+
+.bookItemTitle {
+    text-overflow: ellipsis;
+}

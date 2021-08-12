@@ -1,0 +1,33 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2021,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": "off",
+    "react/prop-types": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.tsx",
+        "*.ts",
+        "*.js"
+      ]
+    }
+  ]
+}
